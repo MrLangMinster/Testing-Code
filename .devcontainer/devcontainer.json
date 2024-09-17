@@ -14,8 +14,8 @@
         "ms-python.vscode-pylance",
         "ms-toolsai.jupyter", 
         "ms-azuretools.vscode-docker",
-	    "esbenp.prettier-vscode",
-	    "formulahendry.code-runner",
+	"esbenp.prettier-vscode",
+	"formulahendry.code-runner",
 	"usernamehw.errorlens"
     ],
     "postCreateCommand": "pip install -r requirements.txt",
