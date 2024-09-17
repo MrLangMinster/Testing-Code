@@ -1,0 +1,33 @@
+{
+    "name": "Python 3 Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/python:3",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python3",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter", 
+        "ms-azuretools.vscode-docker",
+	    "esbenp.prettier-vscode",
+	    "formulahendry.code-runner",
+	"usernamehw.errorlens"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "vscode",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "workspaceFolder": "/workspace",
+    "runArgs": [
+        "--cap-add=SYS_PTRACE",
+        "--security-opt",
+        "seccomp=unconfined"
+    ],
+    "containerUser": "vscode"
+}

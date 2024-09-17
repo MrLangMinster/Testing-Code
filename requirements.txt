@@ -1,0 +1,23 @@
+# Basic packages
+numpy
+pandas
+matplotlib
+seaborn
+
+# Jupyter Notebook
+jupyter
+
+# Web development
+flask
+
+# Testing
+pytest
+
+# Linting and formatting
+flake8
+black
+
+# Additional useful libraries
+requests
+beautifulsoup4
+scipy
